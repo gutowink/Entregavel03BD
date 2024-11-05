@@ -49,4 +49,26 @@ GROUP BY u.nome;
 
 -- Analise o engajamento em eventos por faixa etária, identificando quais grupos demográficos
 -- (ex., jovens adultos, adultos, idosos) são mais propensos a se inscrever e participar dos eventos
+SELECT
+    CASE
+        WHEN u.idade > 60 THEN 'Idoso'
+        WHEN u.idade > 25 AND u.idade < 60 THEN 'Adulto'
+        ELSE 'Jovem Adulto'
+        END AS FaixaEtaria,
+    COUNT(*) AS Quantidade
+FROM usuario u
+GROUP BY FaixaEtaria
+ORDER BY Quantidade DESC;
 
+-- Crie uma pergunta/insight não listado aqui. Faça a consulta para respondê-la
+-- Pergunta: Quais são os eventos que possuem mais de 2 usuários interessados,
+-- e quais são as categorias desses eventos?
+SELECT
+    e.nome AS NomeEvento,
+    c.nome AS Categoria,
+    COUNT(i.usuarioid) AS TotalInteresses
+FROM evento e
+JOIN interesse i ON e.categoriaid = i.categoriaid
+JOIN categoria c ON e.categoriaid = c.id
+GROUP BY e.id, e.nome, c.nome
+HAVING TotalInteresses > 2;

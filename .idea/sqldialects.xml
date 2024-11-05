@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Loja do Bairro/alter_table_loja_bairro.sql" dialect="SQLite" />
     <file url="file://$PROJECT_DIR$/Loja do Bairro/loja_bairro.sql" dialect="SQLite" />
     <file url="file://$PROJECT_DIR$/Metas de Instituição Financeira/metas_instituicao.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Metas de Instituição Financeira/select_meta_instituicao.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Pesquisa/alter_table_pesquisa.sql" dialect="SQLite" />
     <file url="file://$PROJECT_DIR$/Pesquisa/pesquisa.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Pesquisa/select_pesquisa.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Recomendação para Eventos Sociais/alter_table_recomendacao_eventos.sql" dialect="SQLite" />
     <file url="file://$PROJECT_DIR$/Recomendação para Eventos Sociais/recomendacao_eventos.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/Recomendação para Eventos Sociais/select_recomendacao_eventos.sql" dialect="SQLite" />
   </component>
 </project>

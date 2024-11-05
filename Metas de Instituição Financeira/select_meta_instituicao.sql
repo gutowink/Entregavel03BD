@@ -46,7 +46,7 @@ JOIN categoria c ON c.codigo = m.categoria_id
 WHERE quantidade_vendida < meta;
 
 -- Crie uma pergunta/insight não listado aqui. Faça a consulta para respondê-la
--- Pergunta: Listas os funcionários e quem é seu gestor e suas respectivas notas.
+-- Pergunta: Liste os funcionários e quem é seu gestor e suas respectivas notas.
 SELECT f.nome_completo,
        g.nome_completo AS Gestor,
        a.nota

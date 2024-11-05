@@ -100,4 +100,6 @@ ALTER TABLE usuario ADD COLUMN idade;
 
 UPDATE usuario
 SET idade = ABS(RANDOM() % 86) + 15
-WHERE idade IS NULL
+WHERE idade IS NULL;
+
+ALTER TABLE usuario DROP COLUMN data_nascimento;
