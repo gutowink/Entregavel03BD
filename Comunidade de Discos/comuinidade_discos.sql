@@ -105,15 +105,3 @@ INSERT INTO avaliacao (opiniao, data, estoqueid, clienteid, turnesid) VALUES
         ('Show incrível e produtos de qualidade!', '2024-09-13', 'E013', '654.654.654-65', 'T013'),
         ('Tudo correu conforme o esperado!', '2024-09-14', 'E014', '789.789.789-78', 'T014'),
         ('Excelente evento e produtos ótimos!', '2024-09-15', 'E015', '987.987.987-98', 'T015');
-
-SELECT *
-FROM estoque;
-
-SELECT *
-FROM cliente;
-
-SELECT *
-FROM turnes;
-
-SELECT *
-FROM avaliacao;
